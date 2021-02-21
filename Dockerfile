@@ -17,7 +17,8 @@ RUN apt-get update \
         libunwind8 \
         netcat \
         libssl1.0 \
-	ansible
+	ansible \
+	openssh-client
 
 WORKDIR /azp
 
