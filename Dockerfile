@@ -17,8 +17,13 @@ RUN apt-get update \
         libunwind8 \
         netcat \
         libssl1.0 \
-	ansible \
+	software-properties-common \
+	python3 \
 	openssh-client
+
+RUN apt-add-repository --yes --update ppa:ansible/ansible
+
+RUN apt-get install ansible
 
 WORKDIR /azp
 
