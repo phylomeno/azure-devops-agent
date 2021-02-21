@@ -19,7 +19,8 @@ RUN apt-get update \
         libssl1.0 \
 	software-properties-common \
 	python3 \
-	openssh-client
+	openssh-client \
+	rsync
 
 RUN apt-add-repository --yes --update ppa:ansible/ansible
 
